@@ -1,2 +1,2 @@
 # assignment-2
-Personal Portfolio Prototype
+This website aims to be a prototype for a future personal portfolio.
