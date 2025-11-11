@@ -1,0 +1,48 @@
+.floating-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--hover-color);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.floating-nav.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.floating-nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.floating-nav li {
+    display: flex;
+    align-items: center;
+}
+
+.floating-nav a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-family: var(--font);
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.floating-nav a:hover {
+    color: var(--highlights);
+}

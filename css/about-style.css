@@ -1,0 +1,117 @@
+.about {
+    padding: 4rem 0;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.about-wrapper {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.about h2 {
+    font-family: var(--font);
+    font-size: clamp(2rem, 8vw, 6rem);
+    margin-bottom: 2rem;
+    color: var(--highlights);
+    font-weight: 400;
+    display: flex;
+    width: 100%;
+    align-self: flex-start;
+    margin-top: 0;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-width: 500px;
+    flex: 1 1 300px;
+}
+
+.about-text {
+    color: var(--secondary-color);
+    font-family: var(--font);
+    line-height: 1.6;
+    max-width: 35vw;
+    text-align: left;
+    flex: 1 1 300px;
+}
+
+@media (max-width: 768px) {
+  .about {
+    height: auto;
+    padding: 4rem 0;
+  }
+
+.about-wrapper {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+}
+
+  .about h2 {
+    align-self: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .about-image,
+  .about-text {
+    max-width: 80vw;
+  }
+
+  .projects {
+    height: auto;
+    padding: 4rem 0;
+  }
+
+  .projects-wrapper {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .projects-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+}
+
+.fade-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

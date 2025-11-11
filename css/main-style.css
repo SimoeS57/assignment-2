@@ -1,0 +1,81 @@
+:root {
+    --main-color: #131313;
+    --secondary-color: #F1F1F1;
+    --highlights: #B5DC2B;
+    --hover-color: rgba(40, 40, 40, 0.95);
+    --font: 'Inter', sans-serif;
+    --transition-speed: 0.3s;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-color);
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+}
+
+section {
+    scroll-snap-align: start;
+    min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .about {
+    height: auto;
+    padding: 4rem 0;
+  }
+
+.about-wrapper {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+}
+
+  .about h2 {
+    align-self: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .about-image,
+  .about-text {
+    max-width: 80vw;
+  }
+
+  .projects {
+    height: auto;
+    padding: 4rem 0;
+  }
+
+  .projects-wrapper {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .projects-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+}
+
